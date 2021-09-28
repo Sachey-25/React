@@ -1,7 +1,7 @@
-import React  from 'react'; // hey react please come to my project : React 
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root')
-);
+
+//const element = <h2>My name is Sachin</h2>
+ReactDOM.render(<App />, document.getElementById('root')); 

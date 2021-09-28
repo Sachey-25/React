@@ -1,33 +1,13 @@
-*{
-    box-sizing:border-box;
-}
 body {
-    font-family: 'Lucida Sans';
-    margin: 3rem;
-    background-color: greenyellow;
-}
-h1, h2{
-    color: #333333;
-}
-
-.btn{
-    font:inherit;
-    padding:0.5rem 1.5rem;
-    cursor:pointer;
-    border-radius: 4px;
-    background-color: #800040;
-    color:white;
-    border:1px solid #800040;
-    margin :0 1rem;
-}
-.btn:hover{
-    background-color: #9c1458;
-    border-color: #9c1458;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.btn--alt{
-    background-color: transparent;
-}
-.btn--alt:hover{
-    background-color: #f8dae9;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
