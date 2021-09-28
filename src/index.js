@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import './index.css';
+//import App from './App';
+import Counter from './counter'
 
 
-//const element = <h2>My name is Sachin</h2>
-ReactDOM.render(<App />, document.getElementById('root')); 
+ReactDOM.render(<Counter />, document.getElementById('root'));
+
