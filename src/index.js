@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-//import App from './App';
-import Counter from './counter'
+import BootstrapReact from './bootsrapReact';
 
 
-ReactDOM.render(<Counter />, document.getElementById('root'));
-
+//const element = <h2>My name is Sachin</h2>
+ReactDOM.render(<BootstrapReact />, document.getElementById('root'));
+export default BootstrapReact
