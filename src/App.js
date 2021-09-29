@@ -1,47 +1,51 @@
-import ReactDOM from 'react-dom';
-function Tick(){
-  const element = (
-    <div>
-      <h3>Hello World!</h3>
-      <h3> Today's date is : {new Date().toLocaleDateString()}.</h3>
-      <h3> And the time is : {new Date().toLocaleTimeString()}.</h3>  
-      <h2> The day of the week is :{new Date().getDay()}.</h2>
-      <h2> Tht month is : {new Date().getMonth()}</h2> 
-      </div>
-  );
-  ReactDOM.render(element, document.getElementById('root'));
-}
-setInterval(Tick, 1000) //Callback function <== a function which calls another function
-//Here, setInterval() //
-function App() {
-  return (
-    <div>     
-     <center><h2>Hello to the world from React.Js</h2> </center>      
-    </div>
-  );
-}
-function Clock(props){
-  return(
-    <div>
-      <h1>My name is Clock</h1>
-      <h2>Today's date is : {props.date.toLocaleDateString()}</h2>
-      <h2> the time is: {props.date.toLocaleTimeString()}</h2>
-      <h2> the day is : {props.date.getDay()}</h2>
-    </div>
-  );
-}
-function checkclock(){
-  ReactDOM.render(<Clock date = {new Date()} />,document.getElementById('root'));
-}
-setInterval(checkclock, 1000);
-function Appl(){
-  return(
-    <div>
-      <Clock />
-    </div>
+import React from 'react'
 
+
+export default function Navbar (){
+  return (
+    <>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="/">Techmasters</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li className="nav-item">
+        <a className="nav-link" href ="/"> About </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/">blog</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Social media
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="/">facebook</a></li>
+            <li><a className="dropdown-item" href="/">twitter</a></li>
+            <li><hr className="dropdown-divider" /> </li>
+            <li><a className="dropdown-item" href="/">instagram</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</>
   );
 }
-ReactDOM.render(<Appl />, document.getElementById('root'));
-export default App
+
+
+
 
