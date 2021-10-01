@@ -1,7 +1,8 @@
 import React from 'react'
 
+
 //create a component
-export default function Navbar(props){
+export default function BootsrapReact(props){
     return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
