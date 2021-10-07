@@ -1,16 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-//import App from './Components/Navbar'
+import React from 'react'
+import ReactDOM from 'react-dom'
+//import Appfunction from './components/Navbar'
+//printf()
+//cout >>
+//System.out.println("")
+//React.js
+//import ReactForms from './ReactForms/BasicForm'
+//import Responsive from './ReactForms/MultipleInput'
 //import './index.css'
-//import Regitration from './ReactForms/multipleInputs'
-//import Greetings from './ConditionalRender/UserGreetings'
+//import Greetings from './ConditionalRender/UserGreeting'
+//import NameList from './ReactList/NameList'
 
-import CrudOperation from './crudOperations/crud'
-//import {ProductProvider} from './crudOperations/Context'
-
-
-//const element = <h2>My name is Sachin</h2>
-ReactDOM.render(<CrudOperation />, document.getElementById('root'));
-
-
-//export default BootstrapReact
+import { BrowserRouter } from 'react-router-dom'
+import "./index.css"
+import App from "./ResponsiveNavBar/App"
+ReactDOM.render(
+    <BrowserRouter>
+        <App /> 
+    </BrowserRouter>,
+document.getElementById('root')
+);
